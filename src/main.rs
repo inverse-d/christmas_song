@@ -19,13 +19,16 @@ fn main() {
         "Twelve drummers drumming",
     ];
     for i in 0..days.len() {
-        println!("\nOn the {} day of Christmas, my true love gave to me:", days[i]);       
+        println!(
+            "\nOn the {} day of Christmas, my true love gave to me:",
+            days[i]
+        );
         for j in (0..=i).rev() {
-            if i == 0 && j==0 {
+            if i == 0 && j == 0 {
                 println!("{}", gifts[j]);
             } else {
                 println!("{}", gifts[j]);
             };
-        };
-    };
+        }
+    }
 }
