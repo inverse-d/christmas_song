@@ -23,12 +23,10 @@ fn main() {
             "\nOn the {} day of Christmas, my true love gave to me:",
             days[i]
         );
-        for j in (0..=i).rev() {
+        (0..=i).rev().for_each(|j| {
             if i == 0 && j == 0 {
                 println!("{}", gifts[j]);
-            } else {
-                println!("{}", gifts[j]);
             };
-        }
-    }
+        });
+    };
 }
