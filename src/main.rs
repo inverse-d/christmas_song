@@ -1,7 +1,7 @@
 fn main() {
     println!("The 12 days of christmas song:");
     let days = [
-        "first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eigth", "ninth",
+        "first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth",
         "tenth", "eleventh", "twelfth",
     ];
     let gifts = [
@@ -19,10 +19,7 @@ fn main() {
         "Twelve drummers drumming",
     ];
     for i in 0..days.len() {
-        println!(
-            "\nOn the {} day of Christmas, my true love gave to me:",
-            days[i]
-        );
+        println!("\nOn the {} day of Christmas, my true love gave to me:", days[i]);
         (0..=i).rev().for_each(|j| {
             if i == 0 && j == 0 {
                 println!("{}", gifts[j]);
